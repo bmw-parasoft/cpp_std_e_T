@@ -75,5 +75,5 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: CpptestReports_2025.1
+        name: CpptestReports_for_2025.1
         path: reports/*.*
