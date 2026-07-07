@@ -153,3 +153,6 @@ void list_timers()
     print_string("\n\n");
 }
 
+
+int test01(int a) {     int i;     return a + i; } /* parasoft-suppress BD-PB-NOTINIT "reason 1" */
+
