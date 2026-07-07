@@ -154,5 +154,6 @@ void list_timers()
 }
 
 
-int test01(int a) {     int i;     return a + i; } /* parasoft-suppress BD-PB-NOTINIT "reason 1" */
+int test01(int a) {     int i;     return a + i; } 
+/* parasoft-suppress BD-PB-NOTINIT "reason 1" */
 
