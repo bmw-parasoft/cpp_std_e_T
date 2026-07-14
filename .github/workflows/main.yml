@@ -68,7 +68,7 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v7
       with:
-        name: CpptestReports1
+        name: CpptestReportsA1
         path: reports/*.*
 
     # Uploads an archive that includes all report files (.xml, .html, .sarif).
