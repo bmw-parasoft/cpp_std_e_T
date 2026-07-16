@@ -36,7 +36,7 @@ jobs:
       with:
        fetch-depth: 0
 
-    - name: Fetch all remote branches explicitly
+    - name: Fetch (only) all remote branches explicitly
       run: |
        git remote set-branches origin '*'
        git fetch --prune origin '+refs/heads/*:refs/remotes/origin/*'
