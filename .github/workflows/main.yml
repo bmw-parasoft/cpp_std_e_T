@@ -40,16 +40,16 @@ jobs:
         echo "GITHUB_HEAD_REF=$GITHUB_HEAD_REF"
         echo "GITHUB_BASE_REF=$GITHUB_BASE_REF"
         echo
-        echo "Local branches:"
+        echo "Local branches (git branch -vv):"
         git branch -vv || true
         echo
-        echo "Remote-tracking branches:"
+        echo "Remote-tracking branches (git branch -r):"
         git branch -r || true
         echo
-        echo "All branches:"
+        echo "All branches (git branch -a):"
         git branch -a || true
         echo
-        echo "Remote heads from origin:"
+        echo "Remote heads from origin (git ls-remote --heads origin):"
         git ls-remote --heads origin || true
     
     # Configures your CMake project. Be sure the compile_commands.json file is created.
