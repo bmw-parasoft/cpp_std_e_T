@@ -33,7 +33,15 @@ jobs:
     # Checks out your repository under $GITHUB_WORKSPACE, so that your job can access it.
     - name: Checkout code
       uses: actions/checkout@v6
-       
+      with:
+       fetch-depth: 0
+
+    - name: Fetch all remote branches explicitly
+      run: |
+       git remote set-branches origin '*'
+       git fetch --prune origin '+refs/heads/*:refs/remotes/origin/*'
+       git branch -r
+    
     - name: Show branches visible to this job
       run: |
         echo "GITHUB_REF=$GITHUB_REF"
