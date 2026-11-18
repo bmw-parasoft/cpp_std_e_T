@@ -52,7 +52,7 @@ jobs:
         installDir: 'C:\0_Cpptest_test_release\cpptest_standard-2026.2.0.20261109B5675'
         input: build/compile_commands.json
         compilerConfig: 'gcc_11-64'
-        testConfig: 'builtin://Effective C++'
+        testConfig: 'builtin://Recommended Rules'
         # Uncomment if you are using C/C++test 2020.2 to generate a SARIF report:
         # reportFormat: xml,html,custom
         # additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
