@@ -153,3 +153,10 @@ void list_timers()
     print_string("\n\n");
 }
 
+int is_same(double a, double b)
+{
+    if (a == b) {          /* violation */
+        return 1;
+    }
+    return a != b ? 0 : 1; /* violation */
+}
